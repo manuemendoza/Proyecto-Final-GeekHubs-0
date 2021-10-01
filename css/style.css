@@ -8,3 +8,25 @@
     --fuentePrincipal: 'Poppins', sans-serif;
     ;
 }
+
+/*Global*/
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 16px;
+}
+img {
+    max-width: 100%;
+}
+
+/*tools*/
