@@ -1,8 +1,8 @@
 :root {
     --primario: #0e457d;
     --primarioOscuro: #0b2c52;
-    --secundario: ;
-    --secundarioOscuro: ;
+    --secundario: #576573;
+    --secundarioOscuro: #35495f;
     --blanco: #fff;
     --negro: #000;
     --fuentePrincipal: 'Poppins', sans-serif;
@@ -23,6 +23,9 @@ html {
 
 body {
     font-size: 16px;
+    color: var(--blanco);
+    font-weight: bold;
+    /*esto de aqui es mejor crear una herramienta o un generico*/
 }
 
 img {
@@ -31,6 +34,11 @@ img {
 
 
 /*herramienta*/
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
 
 .no-margin {
     margin: 0;
@@ -47,24 +55,70 @@ img {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: var(--primarioOscuro);
+    background-color: var(--primario);
     height: 100%;
-    width: 26rem;
+    width: 24rem;
 }
+
+
+/*logo*/
 
 .logo__detalles {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-top: 1rem;
-    margin-left: 1rem;
+    padding: 1rem;
+    margin-left: .1rem;
+    /**margin-bottom: 3rem;**/
+    border-bottom: .5rem double var(--primarioOscuro);
 }
 
+.logo__titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*esto tengo que verlo  y mejorarlo*/
+
 .logo__imagen {
-    width: 2rem;
+    max-width: 3rem;
+    height: max-content;
+    margin: 0;
+    padding: 0;
+}
+
+.logo__campana {
+    max-width: 1.9rem;
+    height: max-content;
 }
 
 .logo__nombre {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
+    font-weight: normal;
     color: var(--blanco);
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.nombre__usario {
+    
+}
+
+
+/*canales*/
+
+.canales {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.canales__titulo {
+    font-size: 1.2rem;
+}
+
+.canales__boton {
+    padding: 0;
+    cursor: pointer;
+    color: var(--secundario);
 }
