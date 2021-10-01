@@ -1,8 +1,8 @@
 :root {
     --primario: #0e457d;
     --primarioOscuro: #0b2c52;
-    --secundario: ;
-    --secundarioOscuro: ;
+    --secundario: #576573;
+    --secundarioOscuro: #35495f;
     --blanco: #fff;
     --negro: #000;
     --fuentePrincipal: 'Poppins', sans-serif;
@@ -24,6 +24,9 @@ html {
 
 body{
     font-size: 16px;
+    color: var(--blanco);
+    font-weight: bold;
+    /*esto de aqui es mejor crear una herramienta o un generico*/
 }
 img {
     max-width: 100%;
