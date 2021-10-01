@@ -1,0 +1,74 @@
+:root {
+    --primario: #0e457d;
+    --primarioOscuro: #0b2c52;
+    --secundario: ;
+    --secundarioOscuro: ;
+    --blanco: #fff;
+    --negro: #000;
+    --fuentePrincipal: 'Poppins', sans-serif;
+    ;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-size: var(--fuentePrincipal);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    color: var(--blanco); /*esto tenemos que modificarlo porque sino afectara a todo el proyecto*/
+}
+
+img {
+    width: 100%;
+}
+
+
+/*herramienta*/
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+
+/*sidebar*/
+
+.sidebar {
+    background-color: var(--primarioOscuro);
+    height: 100%;
+    width: 20rem;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--primarioOscuro);
+    height: 100%;
+    width: 26rem; */
+}
+
+.logo__detalles {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.logo__imagen {
+    width: 2rem;
+}
+
+.logo__nombre {
+    font-size: 2.2rem;
+    color: var(--blanco);
+}
